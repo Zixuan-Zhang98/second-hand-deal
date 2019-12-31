@@ -19,8 +19,8 @@ type User struct {
 	// 1 stands for buyer, 2 stands for seller, 3 stands for admin
 	Role []int
 
-	isBuyer  bool
-	isSeller bool
+	IsBuyer  bool
+	IsSeller bool
 }
 
 type Good struct {
