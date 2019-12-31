@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
 )
@@ -36,6 +37,12 @@ type Good struct {
 	Owner       User
 	Description string
 	Price       float64
+}
+
+var tpl *template.Template
+
+func init() {
+	tpl = template.Must(template.ParseGlob("templates/*"))
 }
 
 func main() {
