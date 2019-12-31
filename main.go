@@ -6,6 +6,23 @@ import (
 	"net/http"
 )
 
+type User struct {
+	Id int
+
+	Name  string
+	First string
+	Last  string
+
+	Password []byte
+
+	// Enum type
+	// 1 stands for
+	Role int
+
+	isBuyer  bool
+	isSeller bool
+}
+
 func main() {
 	http.HandleFunc("/", index)
 
