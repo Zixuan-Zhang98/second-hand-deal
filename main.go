@@ -23,6 +23,15 @@ type User struct {
 	isSeller bool
 }
 
+type Good struct {
+	Id          int
+	Name        string
+	Category    string
+	Owner       User
+	Description string
+	Price       float64
+}
+
 func main() {
 	http.HandleFunc("/", index)
 
