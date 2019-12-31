@@ -6,6 +6,12 @@ import (
 	"net/http"
 )
 
+const (
+	Buyer = iota + 1
+	Seller
+	Admin
+)
+
 type User struct {
 	Id int
 
