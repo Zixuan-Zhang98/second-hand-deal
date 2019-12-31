@@ -16,8 +16,8 @@ type User struct {
 	Password []byte
 
 	// Enum type
-	// 1 stands for
-	Role int
+	// 1 stands for buyer, 2 stands for seller, 3 stands for admin
+	Role []int
 
 	isBuyer  bool
 	isSeller bool
