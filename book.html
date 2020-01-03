@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>CSCI 1913 textbook -Retrun 0 team</title>
+    </head>
+    <style>
+        .simg {
+            width: 100px;
+            height: 90px;
+        }
+        .checked {
+                color: orange;
+        }
+        .recommend {
+            border-style: solid;
+            border-color: rgb(202, 202, 202);
+            border-radius: 15px;
+        }
+    </style>
+    
+    <body style="padding: 20px; margin: 20px;">
+        <div class="card-group" style="border-top-style: solid; min-height: 80px ;">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Seller</h5>
+                <p class="card-text">Mark Lee</p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Review numbers</h5>
+                <p class="card-text">10</p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Last editing</h5>
+                <p class="card-text">3:34 PM 01/01/2020</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <table style="width:50%;">
+                        <tr>
+                            <td><input type="image" alt="" class="simg" onclick="changeImage1()" src="book1.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="image" alt="" class="simg" onclick="changeImage2()" src="book2.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="image" alt="" class="simg" onclick="changeImage3()" src="book3.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="image" alt="" class="simg" onclick="changeImage4()" src="lostbook.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="image" alt="" class="simg" onclick="changeImage5()" src="book2.jpg"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="image" alt="" class="simg" onclick="changeImage6()" src="book1.jpg"/></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+                    <img style="width:450px; height:550px;" id="imgChanged" src="book1.jpg">
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+                    <table style="width:50%;">         
+                        <h2 class="title">CSCI 1913: Introduction to Algorithms, Data Structures, and Program Development</h2>
+                        <ul style="font-size: 20px;">
+                            <span>Price: </span>
+                            <span>
+                                <b style="color:red; font-size: 40px">
+                                    $ 105.00
+                                </b>
+                            </span>
+                            <span >
+                                 <i style="color:rgb(249, 175, 98); padding-left: 20px;" class="fa fa-lightbulb-o">  Refuse to bargin!</i>          
+                            </span>
+                        </ul>
+                        <ul style="font-size: 20px;">
+                            <div class="condition">
+                                <span>Condition: </span>
+                                <span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </span>
+                            </div>
+                            <div class="Loaction">
+                                <span>Loaction: </span>
+                                <span>Quad (2508 Delaware St se)</span>
+                            </div>
+                            <div class="contact">
+                                <span>Contact: </span>
+                                <span>651-789-1234</span>
+                            </div>
+                            <div class="payment" style="border: none; outline: none;">
+                                <span class="payment">Payment: </span>
+                                <span class="payment-select">
+                                    <select style="background-color: rgb(230, 230, 230);">
+                                        <option value="cash">Cash</option>
+                                        <option value="paypal">Paypal</option>x 
+                                        <option value="venmo">Venmo</option>
+                                        <option value="chase">Chase</option>
+                                        <option value="ali-pay">Alipay</option>
+                                        <option value="wechat-pay">WechatPay</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="cart-buy" style="border: none; outline: none;">
+                                <a href="#">
+                                    <button class="cart" style="background-color:orange; font-size: 30px; border-radius: 12px;">
+                                        Add to cart
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="buy" style="background-color:orange; font-size: 30px; border-radius: 12px;">
+                                        Buy now
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="share-like">
+                                <button class="share" style="font-size: 15px;">
+                                    Share (<b>0</b>) 
+                                </button>
+                                <button class="like" style="font-size: 15px;">
+                                    Like (<b>0</b>)
+                                </button>
+                            </div>
+                        </ul>
+                        <div class="recommend">
+                            <span style="text-decoration: solid; padding-left: 10px;">Other recommend (<b>4</b>)</span>
+                            <a href="#" target="_blank" class="more" style="padding-left: 225px; color: rgb(249, 175, 98);"><span>More</span></a>
+                            <div class="thumbnail">
+                                <div class="card-group">
+                                    <div class="card">
+                                        <a href="#" target="_blank">
+                                            <img class="simg" src="lostbook.jpg" alt="Card image cap">
+                                        </a>
+                                        <div class="card-body">
+                                        <h6 class="card-title">CSCI 1113</h6>
+                                        <p class="card-text">CSCI 1113: Introduction to C/C++ Programming for Scientists and Engineers</p>
+                                        <p class="card-text"><small class="text-muted">Price: $ <b style="color: red;">20</b></small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#" target="_blank">
+                                            <img class="simg" src="book1.jpg" alt="Card image cap">
+                                        </a>
+                                        <div class="card-body">
+                                            <h6 class="card-title">CSCI 1113</h6>
+                                            <p class="card-text">CSCI 1113: Introduction to C/C++ Programming for Scientists and Engineers</p>
+                                            <p class="card-text"><small class="text-muted">Price: $ <b style="color: red;">20</b></small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#" target="_blank">
+                                            <img class="simg" src="book2.jpg" alt="Card image cap">
+                                        </a>
+                                        <div class="card-body">
+                                            <h6 class="card-title">CSCI 1113</h6>
+                                            <p class="card-text">CSCI 1113: Introduction to C/C++ Programming for Scientists and Engineers</p>
+                                            <p class="card-text"><small class="text-muted">Price: $ <b style="color: red;">20</b></small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#" target="_blank">
+                                            <img class="simg" src="book3.jpg" alt="Card image cap">
+                                        </a>
+                                        <div class="card-body">
+                                            <h6 class="card-title">CSCI 1113</h6>
+                                            <p class="card-text">CSCI 1113: Introduction to C/C++ Programming for Scientists and Engineers</p>
+                                            <p class="card-text"><small class="text-muted">Price: $ <b style="color: red;">20</b></small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function changeImage1() {
+                document.getElementById("imgChanged").src = "book1.jpg";
+            }
+            function changeImage2() {
+                document.getElementById("imgChanged").src = "book2.jpg";
+            }
+            function changeImage3() {
+                document.getElementById("imgChanged").src = "book3.jpg";
+            }
+            function changeImage4() {
+                document.getElementById("imgChanged").src = "lostbook.jpg";
+            }
+            function changeImage5() {
+                document.getElementById("imgChanged").src = "book2.jpg";
+            }
+            function changeImage6() {
+                document.getElementById("imgChanged").src = "book1.jpg";
+            }
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
